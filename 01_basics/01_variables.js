@@ -15,7 +15,7 @@ const author = "Sourav Jaryal"
 
 // let author = "6" // this will throws an error because constant can't be changed and not allowed
 // var author = "6" // this will throws an error because constant can't be changed and not allowed
-// author = "6" // we also can't do this because constant can't be changed and not allowed
+// author = "6" // we can't do this because constant can't be changed
 console.log(b)
 console.log(author)
 
