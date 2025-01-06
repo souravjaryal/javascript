@@ -1,4 +1,4 @@
-"use strict"; // treat all JS code as new version
+"use strict"; // treat all JS code as newer version
 
 // alert(3 + 3) // we are using nodejs, not browser so this won't run
 
@@ -31,3 +31,5 @@ console.log(typeof age) // number
 console.log(typeof height) // number
 console.log(typeof null) // object  // bug in JS
 console.log(typeof undefined) // undefined
+
+
