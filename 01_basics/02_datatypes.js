@@ -44,9 +44,63 @@ console.log(typeof undefined) // undefined
 // 6. Symbol: It is used to store unique values.
 // 7. BigInt: It is used to store big integers.
 
+// Examples of Primitive Data Types:
+// let num = 10; // Number
+// let name = "John"; // String
+// let isMale = true; // Boolean
+// let userEmail = undefined; // Undefined
+// let userEmail; // Undefined
+// let y = null; // Null
+// let sym = Symbol("symbol"); // Symbol
+// let id = Symbol("123"); // Symbol return type is another data type which is Symbol
+// let anotherId = Symbol("123"); // Symbol
+// console.log(id === anotherId); // false
+// console.log(typeof id); // symbol
+// console.log(typeof anotherId); // symbol
+// let bigInt = 9007199254740991n; // BigInt n represents BigInt
+
 // Non-Primitive Data Types (Reference Type) (Call by Reference: means that whenever you copy a value from one variable to another, a reference to the value is created. If you change the value of the new variable, the original variable also changes.):
 // 1. Object: It is used to store key-value pairs.
 // 2. Array: It is used to store a list of elements.
 // 3. Function: It is used to store reusable code.
 
 // JavaScript is a dynamically typed language. This means that you don't have to specify the data type of a variable when you declare it. The data type of the variable is determined by the value of the variable. You can change the value of a variable to a different data type. JavaScript is a loosely typed or a dynamically typed language. This means that you don't have to specify the data type of a variable when you declare it. The data type of the variable is determined by the value of the variable. You can change the value of a variable to a different data type.
+
+// Array Example:
+
+const legends = ["Sourav", "Rahul", "Sachin"]
+console.log(typeof legends) // object
+console.log(typeof []) // object
+console.log(typeof {}) // object
+console.log(typeof function() {}) // function
+console.log(typeof new Date()) // object
+console.log(typeof new RegExp()) // object
+
+// Object Example:
+
+const person = {
+    name: "Sourav",
+    age: 26,
+    isMale: true
+}
+console.log(typeof person) // object
+
+// Function Example:
+
+function greet() {
+    console.log("Hello World")
+}
+console.log(typeof greet) // function
+
+const myFunction = function() {
+    console.log("Hello World")
+} 
+console.log("Hello World") // function
+
+// Data type of non primitive type always returns function
+
+// Type of memory allocation:
+// Primitive data types are stored in the stack
+// Non-primitive data types are stored in the heap
+
+
