@@ -103,4 +103,38 @@ console.log("Hello World") // function
 // Primitive data types are stored in the stack
 // Non-primitive data types are stored in the heap
 
+let myYoutubeName = "CodeWithSourav"
+let myYoutubeName2 = myYoutubeName
+console.log(myYoutubeName, myYoutubeName2) // CodeWithSourav CodeWithSourav
+myYoutubeName = "CodeWithSourav2"
+console.log(myYoutubeName, myYoutubeName2) // CodeWithSourav2 CodeWithSourav
 
+
+let myYoutubeName3 = {
+    name: "CodeWithSourav"
+}
+let myYoutubeName4 = myYoutubeName3
+console.log(myYoutubeName3, myYoutubeName4) // { name: 'CodeWithSourav' } { name: 'CodeWithSourav' }
+myYoutubeName3.name = "CodeWithSourav2"
+console.log(myYoutubeName3, myYoutubeName4) // { name: 'CodeWithSourav2' } { name: 'CodeWithSourav2' }
+
+// Primitive data types are stored in the stack, whereas non-primitive data types are stored in the heap. When you assign a primitive data type to a variable, the value is copied from the stack to the new variable. When you assign a non-primitive data type to a variable, the reference is copied from the stack to the new variable. This means that when you change the value of the new variable, the original variable also changes.
+
+let myYoutubeName5 = "souravjaryal"
+let anotherName = myYoutubeName5
+anotherName = "souravjaryavlogs"
+
+console.log(myYoutubeName5) // souravjaryal
+console.log(anotherName) // souravjaryavlogs
+
+let userOne = {
+    name: "Sourav",
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.name = "Rahul"
+
+console.log(userOne.name) // Rahul
+console.log(userTwo.name) // Rahul
