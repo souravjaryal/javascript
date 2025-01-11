@@ -100,7 +100,7 @@ console.log(text.slice(0, 4)); // Output: Java
 console.log(text.slice(0)); // Output: JavaScript
 console.log(text.slice(4)); // Output: Script
 console.log(text.slice(-6));  // Output: Script
-console.log(text.slice(-4));  // Output: Sript
+console.log(text.slice(-4));  // Output: Script
 console.log(text.slice(-5));  // Output: cript
 console.log(text.slice(-7));  // Output: JavaScript
 console.log(text.slice(-8));  // Output: JavaScript
