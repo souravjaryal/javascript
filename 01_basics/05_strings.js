@@ -14,6 +14,11 @@ const str2 = 'World';
 console.log(str1.concat(' ', str2)); // Hello World
 console.log(str1.concat(' ', str2).concat('!')); // Hello World!
 
+// We can't give negative values to substring because it ignore the negative value and starts from the zero index
+const gameName = 'Cricket-7';
+const newString1 = gameName.substring(0, 8); // Substring method is used to extract a part of a string. It takes two arguments, the starting index and the ending index. The ending index is optional. If we don't provide the ending index, it will extract the string from the starting index to the end of the string.
+console.log(newString1);
+
 //Another way to declare strings is by using the String() constructor.
 const str = new String('Hello World'); // This is not a good way to declare strings. We should use the string literals. in this case, we are creating a string object. New keyword is used to create an object.
 console.log(str); // Hello World
@@ -21,7 +26,10 @@ console.log(str.length); // 11
 console.log(str.toUpperCase()); // HELLO WORLD
 console.log(str[0]); // H
 console.log(str.charAt(0)); // H
+console.log(str.charAt(4)); // o
+console.log(str.charAt(5)); // ' '
 console.log(str.charAt(6)); // W
+console.log(str.charAt(7)); // o
 console.log(str.charAt(11)); // ''
 console.log(str.charAt(12)); // ''
 console.log(str.charAt(-1)); // ''
@@ -43,8 +51,11 @@ console.log(newString); // Hello
 console.log(str.substring(6)); // World
 console.log(str.substring(0, 11)); // Hello World
 
-const anotherString = str.slice(0, 5); // Hello
-console.log(anotherString); // Hello
+const anotherString0 = str.slice(0, 7); // Hello W
+console.log(anotherString0); // Hello W
+
+const anotherString = str.slice(-5, 7); // Wor
+console.log(anotherString); // Wor 
 
 const anotherString1 = str.slice(-8, 2); // ''
 console.log(anotherString1); // ''
@@ -54,6 +65,12 @@ console.log();
 
 
 console.log(str.__proto__); // String
+console.log(str.__proto__.__proto__); // Object
+console.log(str.__proto__.__proto__.__proto__); // null
+
+console.log(str.split(' ')); // ['Hello', 'World']
+console.log(str.split('')); // ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+
 
 // Declaring Strings:
 let singleQuote = 'Hello';
@@ -165,12 +182,12 @@ console.log(isValid); // Output: true
 
 
 // Count the Number of Vowels:
+// Count the Number of Vowels:
 let text18 = "JavaScript";
 let count1 = 0;
-let vowels = "aeiou";
-for (let char of text.toLowerCase()) {
-  if (vowels.includes(char)) {
-    count++;
+for (let char of text) {
+  if ("aeiou".includes(char)) {
+    count1++;
   }
 }
 console.log(count1); // Output: 3
