@@ -8,7 +8,12 @@ console.log(`${name} has ${repoCount} public repositories.`); // This is the bes
 console.log(`The sum of 2 and 3 is ${2 + 3}.`); // We can also perform operations inside the placeholders.
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); // We can also use multiple placeholders in a single string. This is the modern way to concatenate strings. We can add methods, functions, and expressions inside the placeholders. 
 
-//Another way to concatenate strings is by using the concat() method.
+// To open strings using Inspect in console
+const gameName0 = new String('Hello World')
+gameName0
+
+
+// Another way to concatenate strings is by using the concat() method.
 const str1 = 'Hello';
 const str2 = 'World';
 console.log(str1.concat(' ', str2)); // Hello World
@@ -18,6 +23,8 @@ console.log(str1.concat(' ', str2).concat('!')); // Hello World!
 const gameName = 'Cricket-7';
 const newString1 = gameName.substring(0, 8); // Substring method is used to extract a part of a string. It takes two arguments, the starting index and the ending index. The ending index is optional. If we don't provide the ending index, it will extract the string from the starting index to the end of the string.
 console.log(newString1);
+
+
 
 //Another way to declare strings is by using the String() constructor.
 const str = new String('Hello World'); // This is not a good way to declare strings. We should use the string literals. in this case, we are creating a string object. New keyword is used to create an object.
@@ -62,6 +69,20 @@ console.log(anotherString1); // ''
 
 console.log(str.slice(-1, 1)); // ''
 console.log();
+
+const newStringOne = "   cricket   "
+console.log(newStringOne);
+console.log(newStringOne.trim()); // cricket
+
+const url = "https://sourav.com/sourav%20jaryal"
+console.log(url.replace('%20', '-')); // sourav-jaryal
+
+console.log(url.includes('sundar')); // false
+
+const gameName1 = new String('sourav-sj-com')
+
+console.log(gameName1.split('-')); // ['sourav', 'sj', 'com']
+
 
 
 console.log(str.__proto__); // String
